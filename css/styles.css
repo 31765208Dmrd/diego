@@ -1,0 +1,145 @@
+@import url(./variable.css);
+@import url(./grid.css);
+
+:root {
+    --primary-bg-color: #AAA;
+    --primary-tx-color: #333;
+    --secundary-bg-color: #000;
+    --secundary-tx-color: #fff;
+
+
+
+}
+
+body {
+    padding: 20px;
+    margin: 0px;
+    background-color: rgba(41, 41, 100, 0.719);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.grid-container>* {
+    box-shadow: 10px 6px 37px --13px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,20rem));
+       /* "header" 20px
+        "section" 20px
+        "main" 20px
+        "footer" 600px;*/
+}
+
+.espacio-superior {
+    margin-top: 2%;
+}
+
+header {
+    grid-area: header;
+    background-color: #007bff;
+    color: whitesmoke;
+    padding: 20px;
+    height:100px;
+    width:100%;
+    border: none;
+}
+
+.styles {
+    gap: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 80%;
+
+}
+.divider{
+    width: clac(2em,5vw,3em);
+    height: 3px;
+    background-color:var(--primary-bg-color) ;
+    margin: auto;
+}
+.container div{
+    width:70%;
+    width:10px;
+    margin: 0px auto;
+    border: 1px solid;
+}
+.container-fluid{
+    float:left;
+    width:80%;
+}
+.aside{
+    float:left;
+    width: 4px;
+}
+.row_img_images {
+    background-image: url(./img/images/icono.foundation.svg);
+    border: 1px solid #666;
+    padding:fit-content;
+    float:right;
+}
+.card-body {
+    display: block;
+    margin: auto;
+    height:10%;
+    width:10%;
+    gap:1em;
+}
+
+.main {
+    grid-area: footer;
+    background-color: #AAA;
+}
+
+h1 {
+    color: white;
+    size: 24px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.proyecto {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.proyecto img {
+    max-width: 70%;
+    height: 150px;
+}
+
+.proyecto h3 {
+    color: #333 font-size 2em;
+}
+
+.proyecto p {
+    color: #666;
+    font-size: 2.5em;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.footer {
+    background-color:var(--primary-color);
+    padding: .5em;
+    }
